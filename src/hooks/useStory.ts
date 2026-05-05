@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import type { GameState, Scene, Choice, Character, Enemy, Ability } from '../types/game';
+import type { GameState, Choice, Character, Enemy, Ability } from '../types/game';
 import { prologueScenes } from '../data/prologue';
 import { act2Scenes } from '../data/act2';
 import { act3Scenes } from '../data/act3';

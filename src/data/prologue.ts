@@ -6,7 +6,7 @@ export const prologueScenes: Record<string, Scene> = {
     speaker: '???',
     text: 'Do you remember the sound of the wind through the crystal spires? Or has the Silence already taken that from you?',
     choices: [
-      { text: 'I remember.', nextSceneId: 'remember' },
+      { text: 'I remember.', nextSceneId: 'remember', action: { type: 'SET_FLAG', payload: 'met_aria' } },
       { text: 'Everything is... hazy.', nextSceneId: 'hazy' },
     ],
   },
@@ -18,7 +18,6 @@ export const prologueScenes: Record<string, Scene> = {
       { text: 'How can I help?', nextSceneId: 'help' },
       { text: 'Why me?', nextSceneId: 'why_me' },
     ],
-    action: { type: 'SET_FLAG', payload: 'met_aria' },
   },
   hazy: {
     id: 'hazy',

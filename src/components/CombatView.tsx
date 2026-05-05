@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Character, Enemy, Ability } from '../types/game';
+import type { Character, Enemy } from '../types/game';
 import { useCombat } from '../hooks/useCombat';
 
 interface CombatViewProps {
